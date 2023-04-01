@@ -8,7 +8,8 @@ terragrunt run-all --terragrunt-source $(pwd)/../../services/tf-service-modb  pl
 
 ### Does NOT Work
 ```
-cd tg-modules/moda
+git clone https://github.com/dsantanu/tg-sample-module.git
+cd tg-sample-module/znp/moda/exc/
 terragrun plan
 ```
 

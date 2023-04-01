@@ -5,7 +5,7 @@ locals {
   values = merge(
     yamldecode(file("common.yaml")),
     yamldecode(file(find_in_parent_folders("global.yaml"))),
-    yamldecode(file("${path_relative_to_include()}/variable.yaml")),
+    yamldecode(file("${path_relative_to_include()}/variables.yaml")),
   )
 }
 
