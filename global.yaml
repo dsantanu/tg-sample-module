@@ -1,3 +1,2 @@
 ---
-tf_repo_pfx: "https://github.com/denis256/terragrunt-tests//terragrunt-tests/discussion-690/services/tf-service"
-
+tf_repo_pfx: "https://github.com/dsantanu/tf-sample"
