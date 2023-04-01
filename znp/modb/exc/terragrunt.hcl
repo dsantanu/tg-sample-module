@@ -29,5 +29,5 @@ inputs = merge(
 )
 
 terraform {
-  source = "${local.values.tf_repo_pfx}-${local.module_name}?ref=${local.values.module_branch}"
+  source = "${local.values.tf_repo_pfx}-${local.values.module_name}?ref=${local.values.module_branch}"
 }

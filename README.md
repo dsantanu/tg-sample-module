@@ -2,14 +2,17 @@
 
 ### Works
 ```
+git clone https://github.com/dsantanu/tg-sample-module.git
+mkdir services && cd services
 git clone https://github.com/dsantanu/tf-sample-moda.git
 git clone https://github.com/dsantanu/tf-sample-modb.git
-git clone https://github.com/dsantanu/tg-sample-module.git
-cd tg-sample-module/znp/moda/exc/
+cd ../tg-sample-module/znp/moda/exc/
 terragrunt plan --terragrunt-source ../../../../services//tf-sample-moda
+cd ../../modb/exc/
+terragrunt plan --terragrunt-source ../../../../services//tf-sample-modb
 ```
 
-### Does NOT Work
+### SHOULD Work but Does NOT
 ```
 git clone https://github.com/dsantanu/tg-sample-module.git
 cd tg-sample-module/znp/moda/exc/
