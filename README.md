@@ -10,7 +10,7 @@ terragrunt run-all --terragrunt-source $(pwd)/../../services/tf-service-modb  pl
 ```
 git clone https://github.com/dsantanu/tg-sample-module.git
 cd tg-sample-module/znp/moda/exc/
-terragrun plan
+terragrunt plan --terragrunt-log-level debug
 ```
 
 References:
