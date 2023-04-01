@@ -21,6 +21,13 @@ dependencies {
   ]
 }
 
+inputs = merge(
+  local.values,
+  {
+    dependent_value = dependency.moda.outputs.file_name
+  }
+)
+
 terraform {
   source = "${local.values.tf_repo_pfx}-${local.module_name}?ref=${local.values.module_branch}"
 }
