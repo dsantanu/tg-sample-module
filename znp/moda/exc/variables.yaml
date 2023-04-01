@@ -1,0 +1,4 @@
+---
+module_name: moda
+run_acc: &run_acc exc
+version: 123
