@@ -1,3 +1,4 @@
+##
 include {
   path = find_in_parent_folders()
 }
@@ -11,12 +12,12 @@ locals {
 }
 
 dependency "moda" {
-  config_path = "../../genesis/${local.values.run_acc}"
+  config_path = "../../moda/${local.values.run_acc}"
 }
 
 dependencies {
   paths = [
-    "../../genesis/${local.values.run_acc}"
+    "../../moda/${local.values.run_acc}"
   ]
 }
 
