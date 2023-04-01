@@ -16,8 +16,8 @@ dependency "moda" {
 
 dependencies {
   paths = [
-"../../genesis/${local.values.run_acc}"
-]
+    "../../genesis/${local.values.run_acc}"
+  ]
 }
 
 terraform {
